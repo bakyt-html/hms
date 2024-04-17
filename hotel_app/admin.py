@@ -1,14 +1,28 @@
 # hotel_app/admin.py
 
 from django.contrib import admin
-from .models import Room, RoomPhoto
+from .models import Room, Category, Meal, Comment, Bed
 
-# Регистрируем модель Room для административной панели
+
 @admin.register(Room)
 class RoomAdmin(admin.ModelAdmin):
-    list_display = ['name', 'capacity']  # Отображаемые поля в списке объектов
+    list_display = ['name', 'capacity']
 
-# Регистрируем модель RoomPhoto для административной панели
-@admin.register(RoomPhoto)
-class RoomPhotoAdmin(admin.ModelAdmin):
-    pass  # Пока не указываем дополнительных настроек, но можно добавить позже
+@admin.register(Category)
+class CategoryAdmin(admin.ModelAdmin):
+    list_display = ['name']
+
+@admin.register(Meal)
+class MealAdmin(admin.ModelAdmin):
+    list_display = ['name']
+
+@admin.register(Comment)
+class CommentAdmin(admin.ModelAdmin):
+    list_display = ['user', 'text']
+
+@admin.register(Bed)
+class BedAdmin(admin.ModelAdmin):
+    list_display = ['name']
+
+
+

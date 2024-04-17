@@ -1,7 +1,7 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 
-from .models import Room, RoomPhoto
+from .models import Room
 
 def room_list(request):
     rooms = Room.objects.all()
