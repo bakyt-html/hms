@@ -1,0 +1,40 @@
+# PyCharm
+.idea/
+
+# Virtual Environment
+venv/
+.env/
+.env
+# Compiled Python files
+*.pyc
+
+# Django migration files
+/migrations/
+
+# Ignore local settings file
+local_settings.py
+
+# Ignore database file
+db.sqlite3
+
+# Ignore static files directory (if you're using collectstatic)
+/staticfiles/
+
+# Ignore media files directory
+/media/
+
+# Ignore secret key file
+*.key
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore Python bytecode files
+__pycache__/
+
+# Ignore logs
+*.log
+
+# Ignore backup files
+*~
+db.sqlite3

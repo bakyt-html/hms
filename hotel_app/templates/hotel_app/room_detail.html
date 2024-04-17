@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Комната</title>
+</head>
+<body>
+{% extends 'hotel_app/base.html' %}
+{% block content %}
+    <div class="row row-cols-2 g-3">
+  <div class="col">
+    <div class="card">
+      <img src="{{ room.image.url }}" class="card-img-top"
+        alt="Hollywood Sign on The Hill" />
+      <div class="card-body">
+        <h5 class="card-title">{{ room.name }}</h5>
+        <p class="card-text">
+            {{ room.description}}
+        </p>
+      </div>
+    </div>
+  </div>
+    </div>
+{% endblock %}
+
+</body>
+</html>
